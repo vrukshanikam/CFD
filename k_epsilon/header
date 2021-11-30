@@ -1,0 +1,53 @@
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c
+      implicit double precision (a-h,o-z)
+c
+      parameter(ix=322,jf=82)
+c
+      common /vector/ u1(ix,jf),v1(ix,jf),xk1(ix,jf),d1(ix,jf),
+     *                u2(ix,jf),v2(ix,jf),xk2(ix,jf),d2(ix,jf),
+     *                vist(ix,jf),p(ix,jf),qinlet(jf),
+     *                din(jf),xkin(jf),um(ix,jf),vm(ix,jf),
+     *		      umi(ix,jf),vmi(ix,jf),u2p(ix,jf),v2p(ix,jf),
+     *		      uv2p(ix,jf),xkm(ix,jf),dsm(ix,jf),
+     *                residu_0(ix,jf),residv_0(ix,jf)
+c
+      common /fix/ stab,stab_ke,updef
+c
+c
+      common /vari/ iim,jim,ire,jre,idt,jdt,itamax,iexit,imax,jmax,
+     *        irest,ita,iti,isum,ja,jb,ia,ib,jn1,jnim,iuprof,itkd,
+     *        itime
+c
+      common /varr/ al,deltax,deltay,deltx2,delty2,epsi,epsi_ke,dtmax,
+     *		    dt,re,rev,beta0,deltat,utop,beta,rdx,rdy,fx,fy,
+     *		    alpha,alphaxk,cm,c1,c2,sk,sd,stat,divmax,
+     *              duudx,dvudy,duvdx,dvvdy,dpdx,zeit,dtt,dpdy,
+     *		    xtt,ytt,xin,deltat_ke,divkd,uc,dt_vel_m,dt_rms
+c
+      common /corbx/ u1a,u22,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,u13,
+     *               u14,u15,u16,u17,u18,u19,u20,u21,u23,u24,u25,
+     *               u26,u27,u28,u151,u152,u153,u154,v1a,v22,v3,v4,
+     *               v5,v6,v7,v8,v9,v10,v11,v12,v13,v14,v15,v16,
+     *               v17,v18,v19,v20,v21,v23,v24,v25,v26,v27,v28,
+     *               v151,v152,v153,v154
+c
+c
+      common /corbxt/ xk1a,xk2a,xk3,xk4,xk5,xk6,xk7,xk8,xk9,xk10,
+     *    vist1,vist2,vist3,vist4,vist5,vist6,vist7,vist8,vist9,
+     *    vist10,vist11,vist12,
+     *    tyz1,tyz2,tyz3,tyz4,txy5,txy6,txy7,txy8,txy9,txy10,
+     *    tyz11,tyz12,tm1,tm2,tm3,tm4,tm5,
+     *    xkm1,xkm2,xkm3,xkm4,xkm5,xkm6,xkm7,xkm8,xkm9,xkm10,
+     *    xkm11,xkm12,
+     *    dm1,dm2,dm3,dm4,dm5,dm6,dm7,dm8,dm9,dm10,dm11,dm12,
+     *               d1a,d2a,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,
+     *               vise1,vise2,vise3,vise4,vise5,vise6,vise7,
+     *               vise8,vise9,vise10,vise11,vise12,
+     *    vis1a,vis2a,vis2,vis3,vis4,vis5,vis6,vis7,vis8,vis9,
+     *    vis10,vis11,vis12,
+     *    xu9,xu11,xv1a,xv3,xv9,xv11,xw1a,xw3,
+     *    stu5,stu7,stv3,stv5,stv11,stv13
+c
+c
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
