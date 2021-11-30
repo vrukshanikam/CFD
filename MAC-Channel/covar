@@ -1,0 +1,49 @@
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c
+      implicit double precision (a-h,o-z)
+c
+c
+      parameter(ix=90,jf=22,kf=97,ns=2)
+c
+c
+      common /vector/ u2(ix,jf,kf),v2(ix,jf,kf),w2(ix,jf,kf),
+     *                u1(ix,jf,kf),v1(ix,jf,kf),w1(ix,jf,kf),
+     *                ro(ix,jf,kf),t1(ix,jf,kf),t2(ix,jf,kf),
+     *                p(ix,jf,kf),qinlet(jf,kf),eta(ix,jf,kf),
+     *                tinlet(jf,kf),jstamp(ix,kf),kstamp(ix,jf),
+     *                uinlet(ns,jf,kf),vinlet(ns,jf,kf),
+     *                winlet(ns,jf,kf),t1x(ix,jf,kf)
+c
+c
+      common /fix/ uabs,rbk,stab,updef
+c
+c
+      common /vari/ iim,jim,kim,ire,jre,kre,idt,jdt,kdt,
+     *              itmax,jtmax,ktmax,itype,itcalc,
+     *              deltax,deltay,deltaz,deltx2,delty2,
+     *        deltz2,epsi,dtmax,stat,itamax,divmax,dt,dstat,
+     *        stabt,re,rev,garepr,gam,gam1,gam2,xm2,pr,pev,
+     *        tentry,twall,alphat,rtwti,grf,tstr,
+     *        irest,beta0,tstat,deltat,utop,ita,iti,isum,
+     *        beta,itt,kb,ia,ib,rdx,rdy,rdz,fx,fy,fz,
+     *        jn1,jnim,kn1,knim,alpha,totime,
+     *        icopro,iuprof,jstam,iexit,
+     *        ipara,icpara,fr
+c
+c
+      common /corbx/ u1a,u22,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,u13,
+     *               u14,u15,u16,u17,u18,u30,u50,u151,u152,
+     *               u161,u162,u164,u165,
+     *               v1a,v22,v3,v4,v5,v6,v7,v8,v9,v10,v11,v12,v13,
+     *               v14,v15,v16,v17,v18,v30,v50,v151,v152,
+     *               v161,v162,v164,v165,
+     *               w1a,w22,w3,w4,w5,w6,w7,w8,w9,w10,w11,w12,w13,
+     *               w14,w15,w16,w17,w18,w30,w50,w151,w152,
+     *               w161,w162,w164,w165
+c
+c
+      common /corbxt/ t1a,t2a,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12
+c
+c
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+                

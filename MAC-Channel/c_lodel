@@ -1,0 +1,2 @@
+f77 *.o -o rundel
+
